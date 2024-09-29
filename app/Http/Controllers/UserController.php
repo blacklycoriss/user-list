@@ -12,4 +12,10 @@ class UserController extends Controller
         $users = User::all();
         dd($users);
     }
+
+    public function show($id)
+    {
+        $user = User::find($id);
+        dd($user);
+    }
 }
