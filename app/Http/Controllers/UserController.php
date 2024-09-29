@@ -43,4 +43,12 @@ class UserController extends Controller
         $user->save();
         dd('edited');
     }
+
+    public function delete($id)
+    {
+        $user = User::find($id);
+
+        $user->delete();
+        dd('deleted');
+    }
 }
