@@ -18,4 +18,19 @@ class UserController extends Controller
         $user = User::find($id);
         dd($user);
     }
+
+    public function create()
+    {
+        $user = [
+            'username' => 'alexCool228',
+            'name' => 'Alex',
+            'surname' => 'Dubrovskiy',
+            'patronymic' => 'Dimich',
+            'phoneNumber' => '7 (999) 999-99-99',
+            'email' => 'aaaaaa@gmail.com',
+        ];
+        $user = User::insert($user);
+        dump($user);
+        dd('user created');
+    }
 }

@@ -21,10 +21,10 @@ Route::get('/', function() {
 use App\Http\Controllers\UserController;
 Route::get('/users',
     [UserController::class, 'all'])->name('users.all');
+Route::get('/users/create',
+    [UserController::class, 'create'])->name('users.create');
 Route::get('/users/{id}',
     [UserController::class, 'show'])->name('users.show');
-Route::post('/users/create',
-    [UserController::class, 'create'])->name('users.create');
 Route::patch('/users/{id}/edit',
     [UserController::class, 'edit'])->name('users.edit');
 Route::post('/users/{id}/delete',
