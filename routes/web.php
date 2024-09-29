@@ -23,14 +23,14 @@ Route::get('/users',
     [UserController::class, 'all'])->name('users.all');
 Route::get('/users/create',
     [UserController::class, 'create'])->name('users.create');
+Route::get('/users/restore',
+    [UserController::class, 'restore'])->name('users.restore');
 Route::get('/users/{id}',
     [UserController::class, 'show'])->name('users.show');
 Route::get('/users/{id}/edit',
     [UserController::class, 'edit'])->name('users.edit');
 Route::get('/users/{id}/delete',
     [UserController::class, 'delete'])->name('users.delete');
-Route::get('/users/{id}/restore',
-    [UserController::class, 'restore'])->name('users.restore');
 
 use App\Http\Controllers\UserPageController;
 Route::get('/users/{id}/profile',
