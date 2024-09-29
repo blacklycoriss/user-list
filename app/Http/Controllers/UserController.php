@@ -33,4 +33,14 @@ class UserController extends Controller
         dump($user);
         dd('user created');
     }
+
+    public function edit($id)
+    {
+        $user = User::find($id);
+
+        $user->username = 'alexAAA';
+
+        $user->save();
+        dd('edited');
+    }
 }

@@ -25,11 +25,11 @@ Route::get('/users/create',
     [UserController::class, 'create'])->name('users.create');
 Route::get('/users/{id}',
     [UserController::class, 'show'])->name('users.show');
-Route::patch('/users/{id}/edit',
+Route::get('/users/{id}/edit',
     [UserController::class, 'edit'])->name('users.edit');
-Route::post('/users/{id}/delete',
+Route::get('/users/{id}/delete',
     [UserController::class, 'delete'])->name('users.delete');
-Route::post('/users/{id}/restore',
+Route::get('/users/{id}/restore',
     [UserController::class, 'restore'])->name('users.restore');
 
 use App\Http\Controllers\UserPageController;
