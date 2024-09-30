@@ -52,13 +52,19 @@ class UserController extends Controller
         dd('deleted');
     }
 
-    public function restore()
+    public function restore($id)
     {
-        $users = User::onlyTrashed()->get();
-        foreach($users as $user) {
-            $user->restore();
-            dump($user->username);
+        $users = User::withTrashed()->get();
+        dump($users);
+
+        foreach($users as $user)
+        {
+            if ($user->id == $id)
+            {
+                $user->restore();
+                break;
+            }
         }
-        dd('restored');
+        dd('restored user ' . $id);
     }
 }
