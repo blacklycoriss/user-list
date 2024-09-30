@@ -1,3 +1,4 @@
-<div>
-    <!-- Well begun is half done. - Aristotle -->
-</div>
+@extends('layouts.layout')
+@section('content')
+
+@endsection
