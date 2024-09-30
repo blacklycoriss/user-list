@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function() {
-    return view('index');
-})->name('index');
+    return view('index', ['title' => 'Главная']);
+});
 
 
 use App\Http\Controllers\UserController;
