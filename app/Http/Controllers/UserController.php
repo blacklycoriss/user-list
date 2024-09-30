@@ -10,7 +10,12 @@ class UserController extends Controller
     public function all()
     {
         $users = User::all();
-        dd($users);
+
+        return view('users',
+            [
+                'title' => 'Все пользователи',
+                'users' => $users,
+            ]);
     }
 
     public function show($id)
