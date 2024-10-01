@@ -30,7 +30,7 @@ Route::get('/users/{id}',
 Route::get('/users/{id}/edit',
     [PageController::class, 'editPage']);
 Route::post('/users/{id}/edit',
-    [UserController::class, 'edit'])->name('users.edit');
+    [UserController::class, 'edit']);
 Route::get('/users/{id}/delete',
     [UserController::class, 'delete'])->name('users.delete');
 Route::get('/users/{id}/restore',

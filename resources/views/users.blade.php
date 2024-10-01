@@ -5,7 +5,7 @@
     <p>Имя | Электронная почта</p>
     @foreach($users as $user)
         <li>{{ $user->name . ' | ' . $user->email}}</li>
-        {{ html()->form('POST', '/users/'. $user->id .'/edit')->open() }}
+        {{ html()->form('GET', '/users/'. $user->id .'/edit')->open() }}
         {{ html()->submit('Обновить данные') }}
         {{ html()->form()->close() }}
     @endforeach

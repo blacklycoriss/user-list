@@ -43,11 +43,11 @@ class UserController extends Controller
                 'email',
             ]);
 
-        foreach($data as $val)
+        foreach($data as $val => $key)
         {
-            if ($request->filled($val))
+            if ($key != '')
             {
-                $user->update($val);
+                $user->update([$val => $key]);
             }
         }
 
