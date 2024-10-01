@@ -24,19 +24,19 @@ class UserController extends Controller
         dd($user);
     }
 
-    public function create()
+    public function create(Request $request)
     {
         $user = [
-            'username' => 'alexCool228',
-            'name' => 'Alex',
-            'surname' => 'Dubrovskiy',
-            'patronymic' => 'Dimich',
-            'phoneNumber' => '7 (999) 999-99-99',
-            'email' => 'aaaaaa@gmail.com',
+            'username' => $request->get('username'),
+            'name' => $request->get('name'),
+            'surname' => $request->get('surname'),
+            'patronymic' => $request->get('patronymic'),
+            'phoneNumber' => $request->get('phoneNumber'),
+            'email' => $request->get('email'),
         ];
-        $user = User::insert($user);
-        dump($user);
-        dd('user created');
+
+        User::create($user);
+        return redirect('/users');
     }
 
     public function edit($id)

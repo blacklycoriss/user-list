@@ -3,7 +3,7 @@
 
     <h3>Создать нового пользователя на сайте</h3>
     <br>
-    {{ html()->form('POST')->open() }}
+    {{ html()->form('POST', '/users/create')->open() }}
         Логин: {{ html()->input('text', 'username') }} <br>
         Имя: {{ html()->input('text', 'name') }} <br>
         Фамилия: {{ html()->input('text', 'surname') }} <br>

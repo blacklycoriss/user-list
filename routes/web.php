@@ -24,6 +24,8 @@ Route::get('/users',
 Route::get('/users/create', function() {
     return view('create', ['title' => 'Новый пользователь']);
 });
+Route::post('/users/create',
+    [UserController::class, 'create'])->name('users.create');
 Route::get('/users/{id}',
     [UserController::class, 'show'])->name('users.show');
 Route::get('/users/{id}/edit',
