@@ -1,0 +1,173 @@
+[33mcommit 4ec1d3d880f0902aa09a846fa609abedf836f463[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32miss8[m[33m)[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Tue Oct 1 14:51:32 2024 +0700
+
+    modified all()
+
+[33mcommit 36d5e1fcd1a87c6f0a7bb44fdf0b47a3152c1317[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Tue Oct 1 14:49:37 2024 +0700
+
+    add page controller file
+
+[33mcommit 152efbae1947b179fc27388d3f6cc9200332dc7b[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Tue Oct 1 14:12:31 2024 +0700
+
+    update edit method and blades
+
+[33mcommit 8eccd066a3b7f44d4356ee6f0ee98294463568ed[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Tue Oct 1 12:35:13 2024 +0700
+
+    create edit view
+
+[33mcommit c83dcc936604d138d53f3947d4b93267ec58473a[m[33m ([m[1;31mgithub/develop[m[33m, [m[1;32mdevelop[m[33m)[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Tue Oct 1 12:11:29 2024 +0700
+
+    modified form, route and controller
+
+[33mcommit c04da05fe7a599cc4db79318a43c5c52906f06ec[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Mon Sep 30 18:25:23 2024 +0700
+
+    add create form
+
+[33mcommit a913c7762b03f3b21c6c36d43b4496df596262a8[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Mon Sep 30 18:17:54 2024 +0700
+
+    add package spatie/laravel-html
+
+[33mcommit 880392e8562628a0d943c5617be08c88014846de[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Mon Sep 30 18:15:10 2024 +0700
+
+    add blade extends and section
+
+[33mcommit 99932b2dfecc1de8c4fc5c7cf28bb35368e9e82b[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Mon Sep 30 18:10:54 2024 +0700
+
+    add create user blade file
+
+[33mcommit 6713c90df57acdc8dfd99a0d4ede6baf5aab09e7[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Mon Sep 30 18:10:13 2024 +0700
+
+    modified create route
+
+[33mcommit 05774d46f0d350ea6a37c40fd6244c5094754985[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Mon Sep 30 18:05:12 2024 +0700
+
+    add create new user link
+
+[33mcommit aaaa56d6edd9806a8410fe155c103cb31634725d[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Mon Sep 30 17:54:23 2024 +0700
+
+    add users output
+
+[33mcommit 4eecf658f3f6147e3c522aed577ca7e2aebe900b[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Mon Sep 30 17:42:22 2024 +0700
+
+    modified all method in post controller
+
+[33mcommit 1e03c749deb0517fdaaa060e8a1529d9c9c6a101[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Mon Sep 30 17:36:48 2024 +0700
+
+    add blade extend and section
+
+[33mcommit a45fdd4e1c98ce265cfd9689587ba727e0e41854[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Mon Sep 30 17:35:08 2024 +0700
+
+    create users view file
+
+[33mcommit 3cc74ac2f104236bde209926b6aacb96089f1cc5[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Mon Sep 30 17:30:59 2024 +0700
+
+    create index view
+
+[33mcommit c9f0f7c3c7244a2dd192fc7bbedf18f0e0fe1942[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Mon Sep 30 17:21:13 2024 +0700
+
+    create layout
+
+[33mcommit 627a1e15eaafb518e67bbf8dfb82f0980b9a5368[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Mon Sep 30 08:34:46 2024 +0700
+
+    restore fix
+
+[33mcommit c17e559bd8170ef7dc4a42de95cce689dfeba445[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Sun Sep 29 14:02:54 2024 +0700
+
+    add restore all users method
+
+[33mcommit 526982e7d594366892ef286352fa8aed8896cde3[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Sun Sep 29 13:56:16 2024 +0700
+
+    add delete 1 user method
+
+[33mcommit d94933458bd93ab56bfa9ebe4d2a7c91f17b6bee[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Sun Sep 29 13:53:17 2024 +0700
+
+    add edit 1 user method
+
+[33mcommit bb85e4e09266f5d4240790070f5bc1dec2ab5d2f[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Sun Sep 29 13:47:42 2024 +0700
+
+    add create 1 user method
+
+[33mcommit ab5d432e293a31995d7c6e48834f77c8f10e181c[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Sun Sep 29 12:41:57 2024 +0700
+
+    create show 1 user method
+
+[33mcommit 1a385b96d0b14c63a9cf75c3e24faf66e9cdffb2[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Sun Sep 29 12:39:59 2024 +0700
+
+    create show all users method
+
+[33mcommit 8375e6594ec7ed9c1fe4d93e98a8fb6c2681b1b8[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Sun Sep 29 12:33:47 2024 +0700
+
+    modified model and migration
+
+[33mcommit f896c5a672dca25c95b786f5ca0ac6d2152c7a41[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Sun Sep 29 12:20:55 2024 +0700
+
+    create model and migration
+
+[33mcommit e9ec0e2d3a4c83344b6f05861d2e0e1c7984b172[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Sun Sep 29 12:09:56 2024 +0700
+
+    create user controller
+
+[33mcommit 3f6daf31e07a1937e33810896cf9c6582edecb02[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Sun Sep 29 11:01:12 2024 +0700
+
+    create routes
+
+[33mcommit db3d14b2903671ed9590eb4c1463d6a951f01717[m[33m ([m[1;32mmaster[m[33m)[m
+Author: Messmer <prokopovaleksandr544@gmail.com>
+Date:   Sun Sep 29 10:19:21 2024 +0700
+
+    create Laravel

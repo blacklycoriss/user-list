@@ -7,16 +7,6 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function all()
-    {
-        $users = User::all();
-
-        return view('users',
-            [
-                'title' => 'Все пользователи',
-                'users' => $users,
-            ]);
-    }
 
     public function show(string $id)
     {

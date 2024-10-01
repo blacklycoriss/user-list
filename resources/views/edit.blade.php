@@ -3,7 +3,7 @@
 
     <h3>Отредактировать пользователя</h3>
     <br>
-    {{ html()->form('POST', '/users/{id}/edit')->open() }}
+    {{ html()->form('POST', '/users/'.$user->id.'/edit')->open() }}
     Новый Логин: {{ html()->input('text', 'username') }} <br>
     Новое Имя: {{ html()->input('text', 'name') }} <br>
     Новая Фамилия: {{ html()->input('text', 'surname') }} <br>

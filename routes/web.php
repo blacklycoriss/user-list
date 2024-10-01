@@ -19,8 +19,9 @@ Route::get('/', function() {
 
 
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PageController;
 Route::get('/users',
-    [UserController::class, 'all'])->name('users.all');
+    [PageController::class, 'allUsers']);
 Route::get('/users/create', function() {
     return view('create', ['title' => 'Новый пользователь']);
 });
@@ -28,7 +29,10 @@ Route::post('/users/create',
     [UserController::class, 'create'])->name('users.create');
 Route::get('/users/{id}',
     [UserController::class, 'show'])->name('users.show');
-Route::get('/users/{id}/edit',
+Route::get('/users/{id}/edit', function() {
+    return view('edit', []);
+});
+Route::post('/users/{id}/edit',
     [UserController::class, 'edit'])->name('users.edit');
 Route::get('/users/{id}/delete',
     [UserController::class, 'delete'])->name('users.delete');
