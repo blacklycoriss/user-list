@@ -21,9 +21,8 @@ Route::get('/',
     [PageController::class, 'indexPage']);
 Route::get('/users',
     [PageController::class, 'allUsers']);
-Route::get('/users/create', function() {
-    return view('create', ['title' => 'Новый пользователь']);
-});
+Route::get('/users/create',
+    [PageController::class, 'createPage']);
 Route::post('/users/create',
     [UserController::class, 'create'])->name('users.create');
 Route::get('/users/{id}',

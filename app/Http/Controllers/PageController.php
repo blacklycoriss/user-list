@@ -21,4 +21,8 @@ class PageController extends Controller
                 'users' => $users,
             ]);
     }
+    public function createPage()
+    {
+        return view('create', ['title' => 'Новый пользователь']);
+    }
 }
