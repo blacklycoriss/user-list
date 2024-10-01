@@ -13,13 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function() {
-    return view('index', ['title' => 'Главная']);
-});
 
 
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PageController;
+Route::get('/',
+    [PageController::class, 'indexPage']);
 Route::get('/users',
     [PageController::class, 'allUsers']);
 Route::get('/users/create', function() {
