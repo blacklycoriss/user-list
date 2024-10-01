@@ -18,7 +18,7 @@ class UserController extends Controller
             ]);
     }
 
-    public function show($id)
+    public function show(string $id)
     {
         $user = User::find($id);
         dd($user);
@@ -39,14 +39,29 @@ class UserController extends Controller
         return redirect('/users');
     }
 
-    public function edit($id)
+    public function edit(string $id, Request $request)
     {
-        $user = User::find($id);
+        $user = User::findOrFail($id);
 
-        $user->username = 'alexAAA';
+        $data = $request->only(
+            [
+                'username',
+                'name',
+                'surname',
+                'patronymic',
+                'phoneNumber',
+                'email',
+            ]);
 
-        $user->save();
-        dd('edited');
+        foreach($data as $val)
+        {
+            if ($request->filled($val))
+            {
+                $user->update($val);
+            }
+        }
+
+        return redirect('/users');
     }
 
     public function delete($id)
