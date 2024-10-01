@@ -1,5 +1,14 @@
 @extends('layouts.layout')
 @section('content')
+    <h3>{{ 'Пользователь "' . $user->username . '"' }}</h3>
+    <br>
+
+    Логин: {{ $user->username }}<br>
+    Имя: {{ $user->name }}<br>
+    Фамилия: {{ $user->surname }}<br>
+    Отчество/Матчество: {{ $user->patronymic }}<br>
+    Телефон: {{ $user->phoneNumber }}<br>
+    Электронная почта: {{ $user->email }}<br>
 
     <h3>Отредактировать пользователя</h3>
     <br>

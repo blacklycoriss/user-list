@@ -27,9 +27,8 @@ Route::post('/users/create',
     [UserController::class, 'create'])->name('users.create');
 Route::get('/users/{id}',
     [UserController::class, 'show'])->name('users.show');
-Route::get('/users/{id}/edit', function() {
-    return view('edit', []);
-});
+Route::get('/users/{id}/edit',
+    [PageController::class, 'editPage']);
 Route::post('/users/{id}/edit',
     [UserController::class, 'edit'])->name('users.edit');
 Route::get('/users/{id}/delete',

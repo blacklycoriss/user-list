@@ -25,4 +25,9 @@ class PageController extends Controller
     {
         return view('create', ['title' => 'Новый пользователь']);
     }
+    public function editPage(string $id)
+    {
+        $user = User::find($id);
+        return view('edit', ['title' => 'Пользователь', 'user' => $user]);
+    }
 }
